@@ -1,14 +1,14 @@
 import React from "react";
-import PizzaLeft from "../assets/pizzaLeft.jpeg";
+import recycle from "../assets/recycle.jpeg";
 import "../styles/Contact.css";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
     <div className="contact">
       <div
         className="leftSide"
-        style={{ backgroundImage: `url(${PizzaLeft})` }}
-      ></div>
+        style={{ backgroundImage: `url(${recycle})` }}></div>
       <div className="rightSide">
         <h1> Contact Us</h1>
 
@@ -24,7 +24,9 @@ function Contact() {
             name="message"
             required
           ></textarea>
+          <Link to="/menu">
           <button type="submit"> Send Message</button>
+          </Link>
         </form>
       </div>
     </div>
